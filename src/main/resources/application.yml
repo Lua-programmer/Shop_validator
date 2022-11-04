@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  output:
+    ansi:
+      enabled: ALWAYS
+  flyway:
+    locations:
+      - filesystem:src/main/resources/db/migrations
+    encoding: cp1252
